@@ -1,0 +1,277 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.btn {
+    background: #F3F3F3;
+}
+.btn:hover {
+    box-shadow: black 0 0 10px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header > a > img {
+    height: 90px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+header ul {
+    display: flex;
+    margin-right: 60px;
+}
+
+header li {
+    margin: 0 30px;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 100;
+}
+
+nav {
+    margin-right: 30px;
+    justify-content: flex-end;
+}
+nav ul {
+    justify-content: flex-end;
+}
+
+main > p {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+main div {
+    position: relative;
+    height: 420px;
+    width: 850px;
+    background: #9F171F;
+    border-radius: 45px;
+}
+
+main img {
+    position: absolute;
+    height: 420px;
+    top: 0;
+    right: -45px;
+}
+
+main div p {
+    width: 550px;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 40px;
+    margin-left: 40px;
+}
+
+.footer {
+    justify-content: space-between;
+}
+
+.footer a {
+    margin-left: 60px;
+}
+
+.footer p {
+    margin-right: 60px;
+    color: #9F171F;
+    z-index: 100;
+}
+
+.white{
+    background: white;
+    width: 100px;
+    height: 70px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img {
+    height: 55px;
+    margin-left: -10px;
+}
+
+.vetka-prod {
+    position: absolute;
+    right: 0;
+    bottom: 120px;
+    z-index: 10;
+}
+@media screen and (max-height: 800px) {
+    main > p {
+        font-size: 30px;
+    }
+
+    main div {
+        height: 350px;
+        width: 600px;
+        border-radius: 40px;
+    }
+    
+    main img {
+        height: 350px;
+    }
+    
+    main div p {
+        width: 400px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 900px) {
+
+    li {
+        margin: 0 15px;
+    }
+
+    li:last-child {
+        margin-right: 0;
+    }
+
+    .btn:not(.white){
+        height: 40px;
+        width: 130px;
+    }
+
+    main > p {
+        font-size: 30px;
+    }
+
+    main div {
+        height: 350px;
+        width: 600px;
+        border-radius: 40px;
+    }
+    
+    main img {
+        height: 350px;
+    }
+    
+    main div p {
+        width: 400px;
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 750px){
+    header {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header > img {
+        width: 119px;
+        margin: 0;
+    }
+    header > a > img {
+        margin: 0;
+    }
+    nav {
+        margin-top: 10px;
+        margin-right: 0;
+    }
+    nav ul {
+        margin: 0;
+        justify-content: flex-end;
+    }
+
+    .btn {
+        margin: 0
+    }
+
+    header li {
+        margin: 0 10px;
+    }
+
+    li:first-child {
+        margin-left: 0;
+    }
+
+    main > p {
+        font-size: 22px;
+    }
+
+    main div {
+        height: 350px;
+        width: 400px;
+        border-radius: 40px;
+    }
+    
+    main img {
+        height: 350px;
+    }
+    
+    main div p {
+        padding-top: 20px;
+        margin-left: 20px;
+        width: 200px;
+        font-size: 19px;
+    }
+    .footer a {
+        margin-left: 20px;
+    }
+    .white{
+        width: 70px;
+        height: 45px;
+    }
+    .white img {
+        height: 37px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .btn:not(.white){
+        height: 30px;
+        width: 100px;
+    }
+
+    main > p {
+        font-size: 15px;
+    }
+
+    main div {
+        height: 200px;
+        width: 250px;
+        border-radius: 40px;
+    }
+    
+    main img {
+        height: 200px;
+    }
+    
+    main div p {
+        padding-top: 5px;
+        margin-left: 20px;
+        width: 125px;
+        font-size: 12px;
+    }
+
+    .footer > p {
+        font-size: 15px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+}
+
+

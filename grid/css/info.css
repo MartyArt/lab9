@@ -1,0 +1,51 @@
+.info div {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+}
+
+.info {
+    width: 80vw;
+    font-size: 28px;
+    text-align: right;
+    justify-self: center;
+}
+
+.footer {
+    grid-template-columns: auto 1fr;
+    justify-content: end;
+}
+.footer p {
+    justify-self: end;
+}
+
+.active {
+    background: #9F171F;
+    color: white;
+}
+
+@media screen and (max-width: 1000px) {
+    .info {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .info {
+        font-size: 18px;
+    }
+
+    .info img{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .info {
+        font-size: 15px;
+    }
+
+    .info img{
+        height: 100px;
+    }
+}
